@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman | gholamhasanEhsani</title>
+    <link rel="stylesheet" href="hangman.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="opt-con" id="opt-con">
+            <h2>موضوع را انتخاب کنید</h2>
+            <div class="opt-btn-con" id="opt-btn-con">
+                <button class="opt" onclick="opt(0)">میوه ها</button>
+                <button class="opt" onclick="opt(1)">کشورها</button>
+            </div>
+            <!-- <input type="checkbox" id="score" class="score">
+         <label for="score">می‌خواهم امتیاز بگیرم و بازی زمان دار باشد</label> -->
+            <br />
+            <button class="start-btn" id="start-btn" disabled onclick="startGame()">شروع بازی</button>
+        </div>
+        <div class="main-con hide" id="main-con">
+            <div class="guess-con" id="guess-con"></div>
+            <div class="letter-con" id="letter-con">
+                <div class="letter-con1">
+                    <span class="letter">ا</span>
+                    <span class="letter">ب</span>
+                    <span class="letter">پ</span>
+                    <span class="letter">ت</span>
+                    <span class="letter">ث</span>
+                    <span class="letter">ج</span>
+                    <span class="letter">چ</span>
+                    <span class="letter">ح</span>
+                </div>
+                <div class="letter-con2">
+                    <span class="letter">خ</span>
+                    <span class="letter">د</span>
+                    <span class="letter">ذ</span>
+                    <span class="letter">ر</span>
+                    <span class="letter">ز</span>
+                    <span class="letter">ژ</span>
+                    <span class="letter">س</span>
+                    <span class="letter">ش</span>
+                </div>
+                <div class="letter-con3">
+                    <span class="letter">ص</span>
+                    <span class="letter">ض</span>
+                    <span class="letter">ط</span>
+                    <span class="letter">ظ</span>
+                    <span class="letter">ع</span>
+                    <span class="letter">غ</span>
+                    <span class="letter">ف</span>
+                    <span class="letter">ق</span>
+                </div>
+                <div class="letter-con4">
+                    <span class="letter">ک</span>
+                    <span class="letter">گ</span>
+                    <span class="letter">ل</span>
+                    <span class="letter">م</span>
+                    <span class="letter">ن</span>
+                    <span class="letter">و</span>
+                    <span class="letter">ه</span>
+                    <span class="letter">ی</span>
+                </div>
+            </div>
+            <div class="hangman-con">
+                <div class="top-hangman"></div>
+                <div class="head hide hang"></div>
+                <div class="body hide hang"></div>
+                <div class="left-arm hide hang"></div>
+                <div class="right-arm hide hang"></div>
+                <div class="left-leg hide hang"></div>
+                <div class="right-leg hide hang"></div>
+            </div>
+        </div>
+        <div class="res-con hide" id="res-con">
+            <div class="win hide" id="win">
+                <h2>شما بردید!</h2>
+                <p>کلمه <b class="w" id="w1"></b> بود!</p>
+                <button class="new" onclick="ne()">دوباره می‌خواهم بازی کنم!</button>
+            </div>
+            <div class="lost hide" id="lost">
+                <h2>شما باختید!</h2>
+                <p>کلمه <u><b class="w" id="w2"></b></u> بود!</p>
+                <button class="new" onclick="ne()">دوباره می‌خواهم بازی کنم</button>
+            </div>
+        </div>
+    </div>
+    <script src="query.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
