@@ -1,145 +1,145 @@
 :root {
-    --yellow: #FFCD00;
-    --black: #000;
-    --white: #FFF;
-    --gray: #E9E9E9;
+   --yellow: #FFCD00;
+   --black: #000;
+   --white: #FFF;
+   --gray: #E9E9E9;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    font-family: Vazirmatn RD, Rubik, sans-serif;
-    direction: rtl;
+   padding: 0;
+   margin: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   font-family: Vazirmatn RD, Rubik, sans-serif;
+   direction: rtl;
 }
 
 body {
-    background: var(--yellow);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   background: var(--yellow);
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .container {
-    width: 90vw;
-    max-width: 34em;
-    background: var(--white);
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    padding: 30px;
-    border-radius: 18px;
-    box-shadow: 0 0 10px -3px black;
+   width: 90vw;
+   max-width: 34em;
+   background: var(--white);
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   padding: 30px;
+   border-radius: 18px;
+   box-shadow: 0 0 10px -3px black;
 }
 
 .hide {
-    display: none !important;
+   display: none !important;
 }
 
 #opt-con,
 #res-con {
-    text-align: center;
+   text-align: center;
 }
 
 #opt-con button {
-    font-size: 16px;
-    margin-top: 10px;
-    background: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    color: black;
-    padding: 8px;
+   font-size: 16px;
+   margin-top: 10px;
+   background: white;
+   border: 1px solid black;
+   border-radius: 5px;
+   color: black;
+   padding: 8px;
 }
 
 #opt-con #opt-btn-con {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 15%;
+   width: 86%;
+   display: flex;
+   justify-content: space-between;
+   margin-right: 7%;
 }
 
 #score {
-    margin-top: 20px;
+   margin-top: 20px;
 }
 
 #start-btn {
-    background: var(--yellow) !important;
-    padding: 8px 40px !important;
-    margin-top: 50px !important;
+   background: var(--yellow) !important;
+   padding: 8px 40px !important;
+   margin-top: 50px !important;
 }
 
 #start-btn:disabled {
-    background: var(--gray) !important
+   background: var(--gray) !important
 }
 
 .opt-select {
-    background: var(--yellow) !important;
+   background: var(--yellow) !important;
 }
 
 .letter {
-    border: 1px solid var(--black);
-    border-radius: 5px;
-    background: var(--yellow);
-    color: var(--black);
-    padding: 5px 9px;
-    cursor: pointer;
+   border: 1px solid var(--black);
+   border-radius: 5px;
+   background: var(--yellow);
+   color: var(--black);
+   padding: 5px 9px;
+   cursor: pointer;
 }
 
 .letter.dis {
-    background: var(--gray);
-    cursor: not-allowed;
+   background: var(--gray);
+   cursor: not-allowed;
 }
 
 .letter-con1,
 .letter-con2,
 .letter-con3,
 .letter-con4 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 5px 0;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   margin: 5px 0;
 }
 
 .guess {
-    border-bottom: 3px solid var(--black);
-    display: inline-block;
-    width: 20px;
-    height: 35px;
-    font-size: 16px;
-    text-align: center;
+   border-bottom: 3px solid var(--black);
+   display: inline-block;
+   width: 20px;
+   height: 35px;
+   font-size: 16px;
+   text-align: center;
 }
 
 .guess-con {
-    width: 100%;
-    min-height: 50px;
-    display: flex;
-    justify-content: space-between;
+   width: 100%;
+   min-height: 50px;
+   display: flex;
+   justify-content: space-between;
 }
 
 .new {
-    background: var(--yellow);
-    padding: 8px;
-    color: var(--black);
-    border: 1px solid var(--black);
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px;
+   background: var(--yellow);
+   padding: 8px;
+   color: var(--black);
+   border: 1px solid var(--black);
+   border-radius: 5px;
+   font-size: 16px;
+   margin-top: 20px;
 }
 
 .win h2 {
-    color: green;
-    font-size: 2.5em;
+   color: green;
+   font-size: 2.5em;
 }
 
 .lost h2 {
-    color: red;
-    font-size: 2.5em;
+   color: red;
+   font-size: 2.5em;
 }
 
 .win p,
 .lost p {
-    font-size: 18px;
+   font-size: 18px;
 }
