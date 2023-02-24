@@ -18,6 +18,7 @@ function ne() {
    startBtn.setAttribute("disabled", "disabled");
    optBtn[0].classList.remove("opt-select");
    optBtn[1].classList.remove("opt-select");
+   optBtn[2].classList.remove("opt-select");
    document.querySelectorAll(".dis").forEach(value => value.classList.remove("dis"))
    guessCon.innerHTML = "";
    hangNumber = -1;
